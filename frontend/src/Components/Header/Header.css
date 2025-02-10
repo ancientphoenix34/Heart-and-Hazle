@@ -1,0 +1,99 @@
+/* HEADER STYLES */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d4a373;
+    max-height: 100px;
+    padding: 15px 20px;
+    position: relative;
+}
+
+.logo {
+    width: 100px;
+    cursor: pointer;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+/* DROPDOWN MENU (FLOATING STYLE) */
+.dropdown-menu {
+    position: absolute;
+    top: 70px; 
+    right: 10px;
+    width: 250px;
+    background-color: #252525;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-menu li {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.dropdown-menu li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+
+/* BACKGROUND OVERLAY */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(182, 174, 174, 0.5);
+    z-index: 999;
+}
+
+/* DESKTOP MENU */
+.desktop-menu {
+    display: flex;
+    gap: 50px;
+}
+
+.desktop-menu li {
+    list-style: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.desktop-menu li:hover {
+    color: #dad0bc;
+}
+
+/* Hide dropdown menu on larger screens */
+@media (min-width: 769px) {
+    .dropdown-menu {
+        display: none;
+    }
+}
+
+
+
+
+

@@ -18,7 +18,7 @@ const Banner = () => {
         slidesToShow: 1,     // Show 1 slide at a time
         slidesToScroll: 1,   // Scroll 1 slide at a time
         autoplay: true,      // Auto slide
-        autoplaySpeed: 700, // Slide every 3s
+        autoplaySpeed: 400, // Slide every 3s
       };
 
       const images = [

@@ -56,6 +56,7 @@
 
 
 
+
 /* BACKGROUND OVERLAY */
 .overlay {
     position: fixed;
@@ -84,6 +85,13 @@
 
 .desktop-menu li:hover {
     color: #dad0bc;
+}
+
+.router-link-active, .router-link-exact-active, 
+.desktop-menu a, .desktop-menu a:visited {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
 }
 
 /* Hide dropdown menu on larger screens */

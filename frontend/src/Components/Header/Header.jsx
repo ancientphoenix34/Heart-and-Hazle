@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Header.css";
 import logo from "../../assets/Heart.png";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -21,7 +22,7 @@ const Header = () => {
 
   return (
     <div className="header">
-      <img src={logo} alt="Logo" className="logo" />
+      <Link to='/'><img src={logo} alt="Logo" className="logo" /></Link>
 
       <div className="header-lists">
         {isMobile ? (
@@ -34,9 +35,9 @@ const Header = () => {
               <div className="dropdown-menu">
                 <ul>
                   <li onClick={() => setMenuOpen(false)}>Menu</li>
-                  <li onClick={() => setMenuOpen(false)}>Reserve</li>
+                  <li onClick={() => setMenuOpen(false)}><Link to='/reserve'>Reserve</Link></li>
                   <li onClick={() => setMenuOpen(false)}>Private dining</li>
-                  <li onClick={() => setMenuOpen(false)}>Contact</li>
+                  <li onClick={() => setMenuOpen(false)}><Link to='/contact'>Contact</Link></li>
                   <li onClick={() => setMenuOpen(false)}>About</li>
                 </ul>
               </div>
@@ -45,9 +46,9 @@ const Header = () => {
         ) : (
           <ul className="desktop-menu">
             <li>Menu</li>
-            <li>Reserve</li>
+            <li><Link to='/reserve'>Reserve</Link></li>
             <li>Private dining</li>
-            <li>Contact</li>
+            <li><Link to='/contact'>Contact</Link></li>
             <li>About</li>
           </ul>
         )}

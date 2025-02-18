@@ -42,7 +42,6 @@ const Header = ({ scrollToBooking }) => { // Accept scroll function as a prop
                 <ul>
                   <li onClick={() => setMenuOpen(false)}>Menu</li>
                   <li onClick={() => { scrollToBooking(); setMenuOpen(false); }}>Reserve</li> {/* Scroll instead of navigating */}
-                  <li onClick={() => setMenuOpen(false)}>Private Dining</li>
                   <li onClick={() => { handleContactClick(); setMenuOpen(false); }}>Contact</li>
                   <li onClick={() => setMenuOpen(false)}>About</li>
                 </ul>
@@ -53,7 +52,6 @@ const Header = ({ scrollToBooking }) => { // Accept scroll function as a prop
           <ul className="desktop-menu">
             <li>Menu</li>
             <li onClick={scrollToBooking}>Reserve</li> {/* Updated to scroll */}
-            <li>Private Dining</li>
             <li onClick={handleContactClick}>Contact</li>
             <li>About</li>
           </ul>

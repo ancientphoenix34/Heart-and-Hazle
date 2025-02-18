@@ -4,6 +4,7 @@ import Header from "../Header/Header";
 import Banner from "../Banner/Banner";
 import Contact from "../Contact/Contact";
 import Booking from "../Booking/Booking";
+import About from "../About/About";
 
 const Home = () => {
   const contactRef = useRef(null); // Reference for Contact Section
@@ -33,6 +34,7 @@ const Home = () => {
       </div>
       <div ref={bookingRef}> {/* Add ref to Booking */}
         <Booking />
+        <About/>
       </div>
     </div>
   );

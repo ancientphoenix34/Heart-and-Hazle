@@ -72,4 +72,99 @@
   .reservation-button:hover {
     background-color: #8c5a37;
   }
-
+  
+  /* ----------------------------------------- */
+  /* RESPONSIVE DESIGN */
+  /* ----------------------------------------- */
+  
+  /* Medium Screens (Tablets) */
+  @media (max-width: 1024px) {
+    .top-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .image-container {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  
+    .top-image {
+      width: 180px;
+    }
+  
+    .text-container {
+      max-width: 100%;
+      padding: 20px;
+    }
+  
+    .reservation-section {
+      padding: 60px 20px;
+    }
+  }
+  
+  /* Small Screens (Phones) */
+  @media (max-width: 768px) {
+    .top-section {
+      flex-direction: column;
+      text-align: center;
+      gap: 20px;
+    }
+  
+    .image-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .top-image {
+      width: 100%;
+      max-width: 250px;
+    }
+  
+    .text-container h2 {
+      font-size: 22px;
+    }
+  
+    .text-container p {
+      font-size: 14px;
+    }
+  
+    .reservation-section {
+      padding: 50px 20px;
+    }
+  
+    .reservation-title {
+      font-size: 24px;
+    }
+  
+    .reservation-button {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
+  }
+  
+  /* Extra Small Screens (Very Small Phones) */
+  @media (max-width: 480px) {
+    .top-section {
+      padding: 10px;
+    }
+  
+    .top-image {
+      max-width: 200px;
+    }
+  
+    .text-container h2 {
+      font-size: 20px;
+    }
+  
+    .reservation-title {
+      font-size: 22px;
+    }
+  
+    .reservation-button {
+      width: 90%;
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+  

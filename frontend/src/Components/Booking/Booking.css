@@ -1,0 +1,75 @@
+/* Container for the entire page */
+.booking-container {
+    background-color: #faf6ef;
+    padding: 50px 20px;
+  }
+  
+  /* Top section layout */
+  .top-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+  }
+  
+  /* Container for images */
+  .image-container {
+    display: flex;
+    gap: 15px;
+  }
+  
+  /* Images */
+  .top-image {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Text section */
+  .text-container {
+    max-width: 500px;
+  }
+  
+  .text-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .text-container p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  /* Reservation Section */
+  .reservation-section {
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .reservation-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .reservation-button {
+    background-color: #a56c41;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+  
+  .reservation-button:hover {
+    background-color: #8c5a37;
+  }
+

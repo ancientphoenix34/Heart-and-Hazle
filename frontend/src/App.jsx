@@ -1,30 +1,22 @@
-import React, { useEffect, useRef } from "react";
-import { useLocation } from "react-router-dom";
-import Header from "../Header/Header";
-import Banner from "../Banner/Banner";
-import Contact from "../Contact/Contact";
+import React from 'react'
+import Reserve from './Pages/Reserve/Reserve'
+import Home from './Components/Home/Home'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
-const Home = () => {
-  const contactRef = useRef(null);
-  const location = useLocation(); // Detects current page URL
 
-  // Scroll to Contact section if the URL contains "#contact"
-  useEffect(() => {
-    if (location.hash === "#contact" && contactRef.current) {
-      contactRef.current.scrollIntoView({ behavior: "smooth" });
-    }
-  }, [location]);
+function App() {
+  
 
   return (
-    <div>
-      <Header />
-      <Banner />
-      <div ref={contactRef}>
-        <Contact />
-      </div>
-    </div>
-  );
-};
+   <div className="App">
+  <Router>
+    <Routes>
+      <Route path='/' element={<Home/>}/>
+      <Route path='/reserve' element={<Reserve/>}/>
+    </Routes>
+  </Router>
+   </div>
+  )
+}
 
-export default Home;
-
+export default App

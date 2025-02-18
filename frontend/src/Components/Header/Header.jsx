@@ -4,10 +4,10 @@ import logo from "../../assets/Heart.png";
 import { FaBars } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 
-const Header = () => {
+const Header = ({ scrollToBooking }) => { // Accept scroll function as a prop
   const [menuOpen, setMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
-  const navigate = useNavigate(); // For navigation
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleResize = () => {
@@ -21,12 +21,12 @@ const Header = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, [isMobile]);
 
-  // Function to navigate to Home and then Contact
+  // Navigate to Home first, then scroll to Contact
   const handleContactClick = () => {
-    navigate("/"); // Navigate to Home first
+    navigate("/");
     setTimeout(() => {
-      window.location.hash = "contact"; // Update URL to #contact
-    }, 100); // Short delay to allow navigation
+      window.location.hash = "contact";
+    }, 100);
   };
 
   return (
@@ -37,14 +37,13 @@ const Header = () => {
         {isMobile ? (
           <div>
             <FaBars onClick={() => setMenuOpen(true)} className="menu-icon" />
-
             {menuOpen && (
               <div className="dropdown-menu">
                 <ul>
                   <li onClick={() => setMenuOpen(false)}>Menu</li>
-                  <li onClick={() => setMenuOpen(false)}><Link to="/reserve">Reserve</Link></li>
+                  <li onClick={() => { scrollToBooking(); setMenuOpen(false); }}>Reserve</li> {/* Scroll instead of navigating */}
                   <li onClick={() => setMenuOpen(false)}>Private Dining</li>
-                  <li onClick={() => { handleContactClick(); setMenuOpen(false); }}>Contact</li> {/* Updated */}
+                  <li onClick={() => { handleContactClick(); setMenuOpen(false); }}>Contact</li>
                   <li onClick={() => setMenuOpen(false)}>About</li>
                 </ul>
               </div>
@@ -53,9 +52,9 @@ const Header = () => {
         ) : (
           <ul className="desktop-menu">
             <li>Menu</li>
-            <li><Link to="/reserve">Reserve</Link></li>
+            <li onClick={scrollToBooking}>Reserve</li> {/* Updated to scroll */}
             <li>Private Dining</li>
-            <li onClick={handleContactClick}>Contact</li> {/* Updated */}
+            <li onClick={handleContactClick}>Contact</li>
             <li>About</li>
           </ul>
         )}

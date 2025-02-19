@@ -8,7 +8,7 @@ const About = () => {
     <div className="about-container">
       {/* Restaurant Introduction */}
       <div className="about-section">
-        <h1>About Girl & The Goat</h1>
+        <h1>About Heart & Hazle</h1>
         <p>
           Girl & the Goat is a vibrant, globally inspired restaurant founded by 
           Chef Stephanie Izard. Since its opening in Los Angeles in 2021, the restaurant 
@@ -29,8 +29,8 @@ const About = () => {
       {/* Footer Section */}
       <footer className="footer">
         <div className="footer-logo">
-          <h3>GIRL & THE GOAT</h3>
-          <p>Los Angeles</p>
+          <h3>Heart & Hazle</h3>
+          <p>UAE</p>
         </div>
 
         <div className="footer-links">

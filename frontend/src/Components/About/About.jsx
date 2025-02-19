@@ -10,12 +10,7 @@ const About = () => {
       <div className="about-section">
         <h1>About Heart & Hazle</h1>
         <p>
-          Girl & the Goat is a vibrant, globally inspired restaurant founded by 
-          Chef Stephanie Izard. Since its opening in Los Angeles in 2021, the restaurant 
-          has embraced the rich, seasonal bounty of California, crafting innovative dishes 
-          that bring bold flavors and a communal dining experience. From its roots in Chicago 
-          to its sun-kissed expansion in LA, Girl & the Goat continues to blend global influences 
-          with fresh, local ingredients.
+        Heart & Hazle is a vibrant, globally inspired restaurant founded by Chef Stephanie Izard. Since its opening in UAE in 2021, the restaurant has embraced the rich, seasonal bounty of the region, crafting innovative dishes that bring bold flavors and a communal dining experience. From its roots in Chicago to its expansion in UAE, Heart & Hazle continues to blend global influences with fresh, locally sourced ingredients.
         </p>
       </div>
 

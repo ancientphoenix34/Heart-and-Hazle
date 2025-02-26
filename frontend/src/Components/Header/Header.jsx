@@ -40,7 +40,7 @@ const Header = ({ scrollToBooking }) => { // Accept scroll function as a prop
             {menuOpen && (
               <div className="dropdown-menu">
                 <ul>
-                  <li onClick={() => setMenuOpen(false)}>Menu</li>
+                <Link to='/menu' onClick={() => setMenuOpen(false)}>Menu</Link>
                   <li onClick={() => { scrollToBooking(); setMenuOpen(false); }}>Reserve</li> {/* Scroll instead of navigating */}
                   <li onClick={() => { handleContactClick(); setMenuOpen(false); }}>Contact</li>
                   <li onClick={() => setMenuOpen(false)}>About</li>
@@ -50,7 +50,12 @@ const Header = ({ scrollToBooking }) => { // Accept scroll function as a prop
           </div>
         ) : (
           <ul className="desktop-menu">
-            <li>Menu</li>
+            <ul>
+  <li onClick={() => setMenuOpen(false)}>
+    <Link to='/menu'>Menu</Link>
+  </li>
+</ul>
+
             <li onClick={scrollToBooking}>Reserve</li> {/* Updated to scroll */}
             <li onClick={handleContactClick}>Contact</li>
             <li>About</li>

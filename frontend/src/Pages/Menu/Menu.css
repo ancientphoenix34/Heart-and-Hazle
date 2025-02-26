@@ -1,0 +1,184 @@
+/* Container */
+.menu-container {
+    background-color: #faf6ef;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  /* Category Buttons */
+  .menu-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  
+  .menu-btn {
+    background-color: #a56c41;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: lowercase;
+  }
+  
+  .menu-btn.active {
+    background-color: #6e6b5e;
+  }
+  
+  .menu-btn:hover {
+    background-color: #8c5a37;
+  }
+  
+  /* Menu Content */
+  .menu-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .menu-heading {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Subcategories */
+  .menu-subcategory {
+    margin-bottom: 20px;
+  }
+  
+  .subcategory-title {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  /* Menu Items */
+  .menu-item-row {
+    margin-bottom: 15px;
+  }
+  
+  .menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: lowercase;
+  }
+  
+  .menu-name {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .menu-price {
+    text-align: right;
+    min-width: 50px;
+  }
+  
+  /* Menu Description */
+  .menu-description {
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+    text-align: left;
+  }
+  
+  /* Line Under Each Dish */
+  .menu-divider {
+    width: 100%;
+    margin-top: 10px;
+    border: none;
+    border-top: 1px solid #000;
+  }
+  
+  /* ----------------------------------------- */
+  /* Responsive Design */
+  /* ----------------------------------------- */
+  
+  /* Medium Screens (Tablets) */
+  @media (max-width: 1024px) {
+    .menu-buttons {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  
+    .menu-btn {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
+  
+    .menu-content {
+      padding: 0 15px;
+    }
+  
+    .menu-items {
+      flex-direction: column;
+    }
+  }
+  
+  /* Small Screens (Phones) */
+  @media (max-width: 768px) {
+    .menu-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .menu-btn {
+      width: 80%;
+    }
+  
+    .menu-content {
+      text-align: center;
+    }
+  
+    .menu-item {
+      align-items: center;
+      flex-direction: column;
+    }
+  
+    .menu-name,
+    .menu-price {
+      font-size: 16px;
+    }
+  
+    .menu-description {
+      font-size: 12px;
+    }
+  
+    .subcategory-title {
+      text-align: center;
+    }
+  }
+  
+  /* Extra Small Screens */
+  @media (max-width: 480px) {
+    .menu-title {
+      font-size: 24px;
+    }
+  
+    .menu-btn {
+      width: 90%;
+    }
+  
+    .menu-name {
+      font-size: 14px;
+    }
+  
+    .menu-price {
+      font-size: 14px;
+    }
+  }
+  
+  
+  

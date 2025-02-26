@@ -41,6 +41,7 @@
     text-align: left;
   }
   
+  /* Menu Heading */
   .menu-heading {
     font-size: 24px;
     font-weight: bold;
@@ -49,17 +50,13 @@
     text-align: center;
   }
   
-  /* Subcategories */
-  .menu-subcategory {
-    margin-bottom: 20px;
-  }
-  
+  /* Subcategory Title (Centered) */
   .subcategory-title {
     font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 10px;
-    text-align: left;
+    text-align: center; /* ✅ Center the subheading */
   }
   
   /* Menu Items */
@@ -67,6 +64,7 @@
     margin-bottom: 15px;
   }
   
+  /* Dish Name and Price on Same Line */
   .menu-item {
     display: flex;
     justify-content: space-between;
@@ -157,7 +155,7 @@
     }
   
     .subcategory-title {
-      text-align: center;
+      text-align: center; /* ✅ Center the subheading */
     }
   }
   
@@ -179,6 +177,7 @@
       font-size: 14px;
     }
   }
+  
   
   
   
